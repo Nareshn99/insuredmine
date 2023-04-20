@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "b1b12969-c280-4765-bb84-b938d53aeec2",
+		"name": "Collection For Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userType\":\"Active Client\",\r\n    \"firstname\":\"test1\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"city\":\"test\",\r\n    \"phone\":\"9090909098\",\r\n    \"address\":\"test\",\r\n    \"state\":\"test\",\r\n    \"zip\":\"454534\",\r\n    \"dob\":\"1999-11-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/create-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"create-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/get-single-user-data/6440a75eb239857af5e4a2b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"get-single-user-data",
+								"6440a75eb239857af5e4a2b1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All User Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/get-all-users-data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"get-all-users-data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \r\n    \"firstname\":\"test1234\",\r\n    \"email\":\"test123@gmail.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/update-user/6440a75eb239857af5e4a2b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"update-user",
+								"6440a75eb239857af5e4a2b1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/delete-user/6440a75eb239857af5e4a2b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"delete-user",
+								"6440a75eb239857af5e4a2b1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Policy",
+			"item": [
+				{
+					"name": "Create Policy Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"policy_mode\": \"11\",\r\n    \"producer\": \"Test roi\",\r\n    \"policy_number\": \"7CZ3CLKWMSKKN\",\r\n    \"premium_amount\": \"1123\",\r\n    \"policy_type\": \"Single\",\r\n    \"policy_start_date\": \"2023-01-01\",\r\n    \"policy_end_date\": \"2024-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/create-policy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"create-policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Policy Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/get-policy-data/6440aeb60fee99d4756eaf57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"get-policy-data",
+								"6440aeb60fee99d4756eaf57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Policy Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"policy_mode\": \"12\",\r\n    \"premium_amount\": \"150.9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/update-policy/6440aeb60fee99d4756eaf57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"update-policy",
+								"6440aeb60fee99d4756eaf57"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Policy Data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/delete-policy/6440aeb60fee99d4756eaf57",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"delete-policy",
+								"6440aeb60fee99d4756eaf57"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Create New Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account_name\":\"test\",\r\n    \"account_type\":\"Commercial\",\r\n    \"csr\":\"sfdd DFG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/create-account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"create-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Account Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/get-account-data/6440b63b25051decea3bf69a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"get-account-data",
+								"6440b63b25051decea3bf69a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account Data",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"account_name\":\"test123\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/update-account/6440b63b25051decea3bf69a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"update-account",
+								"6440b63b25051decea3bf69a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account data",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/delete-account/6440b63b25051decea3bf69a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"delete-account",
+								"6440b63b25051decea3bf69a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload File",
+			"item": [
+				{
+					"name": "Upload file",
+					"protocolProfileBehavior": {
+						"disableUrlEncoding": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/nares/Downloads/insuredmine.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/filtter-data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"filtter-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
